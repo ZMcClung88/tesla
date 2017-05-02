@@ -62,7 +62,9 @@
   </div><!-- end inventory-hero -->
 
   <div class="filter-section" id="filter-section">
-    <div class="zip-filter"></div>
+    <div class="zip-filter">
+
+    </div>
     <div class="price-filter">
       <!-- <input id="ex1" data-slider-id='ex1Slider' type="text" data-slider-min="0" data-slider-max="20" data-slider-step="1" data-slider-value="14"/> -->
     </div>
@@ -75,26 +77,20 @@
         <ul>
           <li id="Black"></li>
           <li id="White"></li>
-          <li id="Bronze"></li>
           <li id="Blue"></li>
           <li id="Silver"></li>
-          <li id="Vanilla"></li>
           <li id="Red"></li>
       </ul>
       </div><!-- end colors -->
     </div><!-- end color filter -->
   </div><!-- end filter section -->
 
-  <div class="" style="color:black;" ng-model="Car">
-    {{Car.id}}
-    {{Car.make}}
-    {{Car.model}}
-  </div>
+
 
   <div class="car-inventory-wrapper">
-    <div class="car-inventory" style="color:black;" ng-repeat="car in Cars | filter: filter">
+    <div class="car-inventory" style="color:black;" ng-repeat="car in Cars | filter: color">
       <div class="vehicle" id="vehicle">
-        <div class="vehicle-image"><a ui-sref="details({id: car.id})"><img src="./images/blue-inventory.jpeg" alt=""></a></div><!-- end vehicle-image -->
+        <div class="vehicle-image"><a ui-sref="details({id: car.id})"><img src="{{car.inventoryimage}}" alt=""></a></div><!-- end vehicle-image -->
         <div class="battery-badge"><img src="./images/p100d.svg" alt=""></div><!-- end battery badge -->
         <div class="battery-capacity"><p>100 kWh <span>Performance</span> All-Wheel Drive</p></div><!-- end battery capacity -->
         <div class="price">${{car.price}}</div><!-- end price -->

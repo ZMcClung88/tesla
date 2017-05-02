@@ -5,7 +5,8 @@ angular.module('tsla', ['ui.router']).config(function($stateProvider, $urlRouter
   $stateProvider
   .state('mainmobile', {
     url: '/',
-    templateUrl: './views/mainmobile.html'
+    templateUrl: './views/mainmobile.html',
+    controller: 'homeCtrl'
   })
   .state('inventory', {
     url:'/inventory/',

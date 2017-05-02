@@ -1,5 +1,5 @@
 <title>Details Page</title>
-<div class="main-details-wrapper">
+<div class="main-details-wrapper ng-views" autoscroll="true">
   <div class="header-container-inventory">
 
     <div  class="header-section" id="header-section2">
@@ -58,14 +58,14 @@
   <div class="details-main-content">
     <div class="left-side">
       <div class="details-images">
-        <div class="details-main-image">
-          <img src="images/models-detail1.jpeg" alt="">
+        <div class="details-main-image" >
+          <img src="{{car[0].images[0].location}}" alt="">
         </div><!-- end details main -->
         <div class="details-other-image">
-          <img src="images/blues-detail2.jpeg" alt="">
-          <img src="images/blues-detail3.jpeg" alt="">
+          <img src="{{image.location}}" alt="" ng-repeat="image in car[0].images" ng-if="$index > 0">
+          <!-- <img src="images/blues-detail3.jpeg" alt="">
           <img src="images/blues-detail4.jpeg" alt="">
-          <img src="images/blues-detail5.jpeg" alt="">
+          <img src="images/blues-detail5.jpeg" alt=""> -->
         </div>
       </div><!-- details images -->
       <div class="details-text">
@@ -113,13 +113,16 @@
       <div class="line"></div><!-- end line -->
       <div class="details-newsletter">
         <p>Be the first to receive the latest Tesla news, events and product updates.</p>
-        <button type="button" name="button">GET NEWSLETTER</button>
+        <button id="emailbtn" type="button" name="button">GET NEWSLETTER</button>
       </div><!-- end details newsletter -->
     </div><!-- end right side -->
   </div><!-- end details main content -->
 
 
-  <img src="{{image.location}}" alt="" ng-repeat="image in car[0].images"/>
+
+  <!-- {{car[0].images[0]}}
+  <img src="{{car[0].images[0].location}}" alt="" > -->
+  <!-- {{car[0].price}} -->
 
 
 </div><!-- end main wrapper -->

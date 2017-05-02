@@ -20,5 +20,18 @@ module.exports = {
         console.log(err);
       }
     })
-  }
+  },
+  // filterCars: function(req, res) {
+  //   var db = app.get('db');
+  //   db.filterCars(req.query.color, function(err, color){
+  //     if(!err){
+  //       console.log(color);
+  //       res.json({ querystring_color: req.query.color });
+  //
+  //     } else {
+  //       console.log("error");
+  //       console.log(err);
+  //     }
+  //   })
+  // }
 }

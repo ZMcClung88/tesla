@@ -9,6 +9,9 @@ angular.module('tsla').service('inventoryService', function($http){
       function(err){
         callback(err)
       })
+  },
+  this.filterCars = function(color, callback){
+    console.log('color');
   }
 
 
