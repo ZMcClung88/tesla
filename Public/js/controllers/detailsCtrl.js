@@ -6,7 +6,7 @@ angular.module('tsla').controller('detailsCtrl', function($scope, detailsService
     detailsService.getCar($stateParams.id, function(response){
       console.log(response);
       $scope.car = response;
-    })
+    }),
 
 
     $('#emailbtn').on('click', function(){
@@ -24,18 +24,31 @@ angular.module('tsla').controller('detailsCtrl', function($scope, detailsService
 
       $modal = $('<div/>').css({
         'width':750,
-        'height': 500,
+        'height': 400,
         'margin':'60% auto',
         'position': 'relative',
         'background-color':'white',
-        'border':'3px solid #505050'
+        // 'border':'3px solid #505050',
+        'display': 'flex',
+        'flex-direction': 'column',
+        'justify-content': 'center',
+        'text-align': 'center',
+        'color': 'grey'
       }).appendTo($overlay)
 
-      $modal.on('mouseout', function(){
+      $modal.append('<div class="newsletterModal-header"></div>\
+                     <div class="newsletterModal-content">\
+                       <h1>Get Tesla Updates</h1>\
+                       <p>GET NEWSLETTER</p>\
+                       <input placeholder=" example@email.com"></input>\
+                       <button id="signup-btn">SIGN UP</button>\
+                      </div> ')
+
+
+      $('#signup-btn').on('click', function(){
         $overlay.remove()
       })
 
-
     })
 
-  })
+})

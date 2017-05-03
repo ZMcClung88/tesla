@@ -70,12 +70,13 @@
     </div>
     <div class="model-filter">
       <!-- <p><input type="text" ng-model="filter"></p> -->
+      <!-- Color Search: <input type="text" ng-model="searchText.color" -->
     </div>
     <div class="color-filter" id="color-filter">
       <div class="colors">
         <h3>EXTERIOR</h3>
         <ul>
-          <li id="Black"></li>
+          <li id="Black"></input></li>
           <li id="White"></li>
           <li id="Blue"></li>
           <li id="Silver"></li>
@@ -88,7 +89,7 @@
 
 
   <div class="car-inventory-wrapper">
-    <div class="car-inventory" style="color:black;" ng-repeat="car in Cars | filter: color">
+    <div class="car-inventory" style="color:black;" ng-repeat="car in Cars | filter: searchText">
       <div class="vehicle" id="vehicle">
         <div class="vehicle-image"><a ui-sref="details({id: car.id})"><img src="{{car.inventoryimage}}" alt=""></a></div><!-- end vehicle-image -->
         <div class="battery-badge"><img src="./images/p100d.svg" alt=""></div><!-- end battery badge -->
