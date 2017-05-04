@@ -24,7 +24,11 @@ create table images (
   main boolean,
   location varchar(50)
 );
---
+--------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
 INSERT INTO cars( make, model, color, year, price, batteryCapacity, inventoryImage)
 	VALUES ('Tesla', 'S', 'Black', 2017, '131,150', '100 kWh Performance All-Wheel Drive', '/images/cars/blacks1.jpg');
 INSERT INTO cars( make, model, color, year, price, batteryCapacity, inventoryImage)
@@ -55,6 +59,42 @@ INSERT INTO cars( make, model, color, year, price, batteryCapacity, inventoryIma
   VALUES ('Tesla', 'S', 'White', 2017, '131,950', '100 kWh Performance All-Wheel Drive', '/images/cars/whites1.jpg');
 INSERT INTO cars( make, model, color, year, price, batteryCapacity, inventoryImage)
   VALUES ('Tesla', 'S', 'Black', 2017, '129,950', '100 kWh Performance All-Wheel Drive', '/images/cars/blacks1.jpg');
+INSERT INTO cars( make, model, color, year, price, batteryCapacity, inventoryImage)
+  VALUES ('Tesla', 'S', 'Blue', 2017, '130,050', '100 kWh Performance All-Wheel Drive', '/images/cars/blues1.jpg');
+
+
+INSERT INTO cars( make, model, color, year, price, batteryCapacity, inventoryImage)
+	VALUES ('Tesla', 'X', 'Black', 2017, '153,800', '100 kWh Performance All-Wheel Drive', '/images/cars/blackx1.jpg');
+INSERT INTO cars( make, model, color, year, price, batteryCapacity, inventoryImage)
+  VALUES ('Tesla', 'X', 'Black', 2017, '98,500', '75 kWh Performance All-Wheel Drive', '/images/cars/blackx1.jpg');
+INSERT INTO cars( make, model, color, year, price, batteryCapacity, inventoryImage)
+  VALUES ('Tesla', 'X', 'White', 2017, '98,6200', '90 kWh Performance All-Wheel Drive', '/images/cars/whitex1.jpg');
+INSERT INTO cars( make, model, color, year, price, batteryCapacity, inventoryImage)
+  VALUES ('Tesla', 'X', 'White', 2017, '99,200', '75 kWh Performance All-Wheel Drive', '/images/cars/whitex1.jpg');
+INSERT INTO cars( make, model, color, year, price, batteryCapacity, inventoryImage)
+  VALUES ('Tesla', 'X', 'Blue', 2017, '99,650', '75 kWh Performance All-Wheel Drive', '/images/cars/bluex1.jpg');
+INSERT INTO cars( make, model, color, year, price, batteryCapacity, inventoryImage)
+  VALUES ('Tesla', 'X', 'Blue', 2017, '104,500', '75 kWh Performance All-Wheel Drive', '/images/cars/bluex1.jpg');
+INSERT INTO cars( make, model, color, year, price, batteryCapacity, inventoryImage)
+  VALUES ('Tesla', 'X', 'Silver', 2017, '110,650', '90 kWh Performance All-Wheel Drive', '/images/cars/silverx1.jpg');
+INSERT INTO cars( make, model, color, year, price, batteryCapacity, inventoryImage)
+  VALUES ('Tesla', 'X', 'Silver', 2017, '113,950', '90 kWh Performance All-Wheel Drive', '/images/cars/silverx1.jpg');
+INSERT INTO cars( make, model, color, year, price, batteryCapacity, inventoryImage)
+  VALUES ('Tesla', 'X', 'Silver', 2017, '131,850', '100 kWh Performance All-Wheel Drive', '/images/cars/silverx1.jpg');
+INSERT INTO cars( make, model, color, year, price, batteryCapacity, inventoryImage)
+  VALUES ('Tesla', 'X', 'Black', 2017, '99,150', '75 kWh Performance All-Wheel Drive', '/images/cars/blackx1.jpg');
+INSERT INTO cars( make, model, color, year, price, batteryCapacity, inventoryImage)
+  VALUES ('Tesla', 'X', 'Blue', 2017, '152,700', '100 kWh Performance All-Wheel Drive', '/images/cars/bluex1.jpg');
+INSERT INTO cars( make, model, color, year, price, batteryCapacity, inventoryImage)
+  VALUES ('Tesla', 'X', 'White', 2017, '113,550', '90 kWh Performance All-Wheel Drive', '/images/cars/whitex1.jpg');
+INSERT INTO cars( make, model, color, year, price, batteryCapacity, inventoryImage)
+  VALUES ('Tesla', 'X', 'White', 2017, '98,900', '90 kWh Performance All-Wheel Drive', '/images/cars/whitex1.jpg');
+INSERT INTO cars( make, model, color, year, price, batteryCapacity, inventoryImage)
+  VALUES ('Tesla', 'X', 'Silver', 2017, '153,100', '100 kWh Performance All-Wheel Drive', '/images/cars/silverx1.jpg');
+INSERT INTO cars( make, model, color, year, price, batteryCapacity, inventoryImage)
+  VALUES ('Tesla', 'X', 'Blue', 2017, '101,500', '90 kWh Performance All-Wheel Drive', '/images/cars/bluex1.jpg');
+INSERT INTO cars( make, model, color, year, price, batteryCapacity, inventoryImage)
+  VALUES ('Tesla', 'X', 'Blue', 2017, '101,500', '90 kWh Performance All-Wheel Drive', '/images/cars/bluex1.jpg');
 
 
 
@@ -136,3 +176,90 @@ INSERT INTO images(carId, type, main, location) VALUES (15, 'car', true, '/image
 INSERT INTO images(carId, type, main, location) VALUES (15, 'car', true, '/images/cars/blacks2.jpg');
 INSERT INTO images(carId, type, main, location) VALUES (15, 'car', true, '/images/cars/blacks3.jpg');
 INSERT INTO images(carId, type, main, location) VALUES (15, 'car', true, '/images/cars/blacks4.jpg');
+INSERT INTO images(carId, type, main, location) VALUES (16, 'car', true, '/images/cars/bluesmain.jpg');
+INSERT INTO images(carId, type, main, location) VALUES (16, 'car', true, '/images/cars/blues1.jpg');
+INSERT INTO images(carId, type, main, location) VALUES (16, 'car', true, '/images/cars/blues2.jpg');
+INSERT INTO images(carId, type, main, location) VALUES (16, 'car', true, '/images/cars/blues3.jpg');
+INSERT INTO images(carId, type, main, location) VALUES (16, 'car', true, '/images/cars/blues4.jpg');
+
+
+INSERT INTO images(carId, type, main, location) VALUES (17, 'car', true, '/images/cars/blackxmain.jpg');
+INSERT INTO images(carId, type, main, location) VALUES (17, 'car', true, '/images/cars/blackx1.jpg');
+INSERT INTO images(carId, type, main, location) VALUES (17, 'car', true, '/images/cars/blackx2.jpg');
+INSERT INTO images(carId, type, main, location) VALUES (17, 'car', true, '/images/cars/blackx3.jpg');
+INSERT INTO images(carId, type, main, location) VALUES (17, 'car', true, '/images/cars/blackx4.jpg');
+INSERT INTO images(carId, type, main, location) VALUES (18, 'car', true, '/images/cars/blackxmain.jpg');
+INSERT INTO images(carId, type, main, location) VALUES (18, 'car', true, '/images/cars/blackx1.jpg');
+INSERT INTO images(carId, type, main, location) VALUES (18, 'car', true, '/images/cars/blackx2.jpg');
+INSERT INTO images(carId, type, main, location) VALUES (18, 'car', true, '/images/cars/blackx3.jpg');
+INSERT INTO images(carId, type, main, location) VALUES (18, 'car', true, '/images/cars/blackx4.jpg');
+INSERT INTO images(carId, type, main, location) VALUES (19, 'car', true, '/images/cars/whitexmain.jpg');
+INSERT INTO images(carId, type, main, location) VALUES (19, 'car', true, '/images/cars/whitex1.jpg');
+INSERT INTO images(carId, type, main, location) VALUES (19, 'car', true, '/images/cars/whitex2.jpg');
+INSERT INTO images(carId, type, main, location) VALUES (19, 'car', true, '/images/cars/whitex3.jpg');
+INSERT INTO images(carId, type, main, location) VALUES (19, 'car', true, '/images/cars/whitex4.jpg');
+INSERT INTO images(carId, type, main, location) VALUES (20, 'car', true, '/images/cars/whitexmain.jpg');
+INSERT INTO images(carId, type, main, location) VALUES (20, 'car', true, '/images/cars/whitex1.jpg');
+INSERT INTO images(carId, type, main, location) VALUES (20, 'car', true, '/images/cars/whitex2.jpg');
+INSERT INTO images(carId, type, main, location) VALUES (20, 'car', true, '/images/cars/whitex3.jpg');
+INSERT INTO images(carId, type, main, location) VALUES (20, 'car', true, '/images/cars/whitex4.jpg');
+INSERT INTO images(carId, type, main, location) VALUES (21, 'car', true, '/images/cars/bluexmain.jpg');
+INSERT INTO images(carId, type, main, location) VALUES (21, 'car', true, '/images/cars/bluex1.jpg');
+INSERT INTO images(carId, type, main, location) VALUES (21, 'car', true, '/images/cars/bluex2.jpg');
+INSERT INTO images(carId, type, main, location) VALUES (21, 'car', true, '/images/cars/bluex3.jpg');
+INSERT INTO images(carId, type, main, location) VALUES (21, 'car', true, '/images/cars/bluex4.jpg');
+INSERT INTO images(carId, type, main, location) VALUES (22, 'car', true, '/images/cars/bluexmain.jpg');
+INSERT INTO images(carId, type, main, location) VALUES (22, 'car', true, '/images/cars/bluex1.jpg');
+INSERT INTO images(carId, type, main, location) VALUES (22, 'car', true, '/images/cars/bluex2.jpg');
+INSERT INTO images(carId, type, main, location) VALUES (22, 'car', true, '/images/cars/bluex3.jpg');
+INSERT INTO images(carId, type, main, location) VALUES (22, 'car', true, '/images/cars/bluex4.jpg');
+INSERT INTO images(carId, type, main, location) VALUES (23, 'car', true, '/images/cars/silverxmain.jpg');
+INSERT INTO images(carId, type, main, location) VALUES (23, 'car', true, '/images/cars/silverx1.jpg');
+INSERT INTO images(carId, type, main, location) VALUES (23, 'car', true, '/images/cars/silverx2.jpg');
+INSERT INTO images(carId, type, main, location) VALUES (23, 'car', true, '/images/cars/silverx3.jpg');
+INSERT INTO images(carId, type, main, location) VALUES (23, 'car', true, '/images/cars/silverx4.jpg');
+INSERT INTO images(carId, type, main, location) VALUES (24, 'car', true, '/images/cars/silverxmain.jpg');
+INSERT INTO images(carId, type, main, location) VALUES (24, 'car', true, '/images/cars/silverx1.jpg');
+INSERT INTO images(carId, type, main, location) VALUES (24, 'car', true, '/images/cars/silverx2.jpg');
+INSERT INTO images(carId, type, main, location) VALUES (24, 'car', true, '/images/cars/silverx3.jpg');
+INSERT INTO images(carId, type, main, location) VALUES (24, 'car', true, '/images/cars/silverx4.jpg');
+INSERT INTO images(carId, type, main, location) VALUES (25, 'car', true, '/images/cars/silverxmain.jpg');
+INSERT INTO images(carId, type, main, location) VALUES (25, 'car', true, '/images/cars/silverx1.jpg');
+INSERT INTO images(carId, type, main, location) VALUES (25, 'car', true, '/images/cars/silverx2.jpg');
+INSERT INTO images(carId, type, main, location) VALUES (25, 'car', true, '/images/cars/silverx3.jpg');
+INSERT INTO images(carId, type, main, location) VALUES (25, 'car', true, '/images/cars/silverx4.jpg');
+INSERT INTO images(carId, type, main, location) VALUES (26, 'car', true, '/images/cars/blackxmain.jpg');
+INSERT INTO images(carId, type, main, location) VALUES (26, 'car', true, '/images/cars/blackx1.jpg');
+INSERT INTO images(carId, type, main, location) VALUES (26, 'car', true, '/images/cars/blackx2.jpg');
+INSERT INTO images(carId, type, main, location) VALUES (26, 'car', true, '/images/cars/blackx3.jpg');
+INSERT INTO images(carId, type, main, location) VALUES (26, 'car', true, '/images/cars/blackx4.jpg');
+INSERT INTO images(carId, type, main, location) VALUES (27, 'car', true, '/images/cars/bluexmain.jpg');
+INSERT INTO images(carId, type, main, location) VALUES (27, 'car', true, '/images/cars/bluex1.jpg');
+INSERT INTO images(carId, type, main, location) VALUES (27, 'car', true, '/images/cars/bluex2.jpg');
+INSERT INTO images(carId, type, main, location) VALUES (27, 'car', true, '/images/cars/bluex3.jpg');
+INSERT INTO images(carId, type, main, location) VALUES (27, 'car', true, '/images/cars/bluex4.jpg');
+INSERT INTO images(carId, type, main, location) VALUES (28, 'car', true, '/images/cars/whitexmain.jpg');
+INSERT INTO images(carId, type, main, location) VALUES (28, 'car', true, '/images/cars/whitex1.jpg');
+INSERT INTO images(carId, type, main, location) VALUES (28, 'car', true, '/images/cars/whitex2.jpg');
+INSERT INTO images(carId, type, main, location) VALUES (28, 'car', true, '/images/cars/whitex3.jpg');
+INSERT INTO images(carId, type, main, location) VALUES (28, 'car', true, '/images/cars/whitex4.jpg');
+INSERT INTO images(carId, type, main, location) VALUES (29, 'car', true, '/images/cars/whitexmain.jpg');
+INSERT INTO images(carId, type, main, location) VALUES (29, 'car', true, '/images/cars/whitex1.jpg');
+INSERT INTO images(carId, type, main, location) VALUES (29, 'car', true, '/images/cars/whitex2.jpg');
+INSERT INTO images(carId, type, main, location) VALUES (29, 'car', true, '/images/cars/whitex3.jpg');
+INSERT INTO images(carId, type, main, location) VALUES (29, 'car', true, '/images/cars/whitex4.jpg');
+INSERT INTO images(carId, type, main, location) VALUES (30, 'car', true, '/images/cars/silverxmain.jpg');
+INSERT INTO images(carId, type, main, location) VALUES (30, 'car', true, '/images/cars/silverx1.jpg');
+INSERT INTO images(carId, type, main, location) VALUES (30, 'car', true, '/images/cars/silverx2.jpg');
+INSERT INTO images(carId, type, main, location) VALUES (30, 'car', true, '/images/cars/silverx3.jpg');
+INSERT INTO images(carId, type, main, location) VALUES (30, 'car', true, '/images/cars/silverx4.jpg');
+INSERT INTO images(carId, type, main, location) VALUES (31, 'car', true, '/images/cars/bluexmain.jpg');
+INSERT INTO images(carId, type, main, location) VALUES (31, 'car', true, '/images/cars/bluex1.jpg');
+INSERT INTO images(carId, type, main, location) VALUES (31, 'car', true, '/images/cars/bluex2.jpg');
+INSERT INTO images(carId, type, main, location) VALUES (31, 'car', true, '/images/cars/bluex3.jpg');
+INSERT INTO images(carId, type, main, location) VALUES (31, 'car', true, '/images/cars/bluex4.jpg');
+INSERT INTO images(carId, type, main, location) VALUES (32, 'car', true, '/images/cars/bluexmain.jpg');
+INSERT INTO images(carId, type, main, location) VALUES (32, 'car', true, '/images/cars/bluex1.jpg');
+INSERT INTO images(carId, type, main, location) VALUES (32, 'car', true, '/images/cars/bluex2.jpg');
+INSERT INTO images(carId, type, main, location) VALUES (32, 'car', true, '/images/cars/bluex3.jpg');
+INSERT INTO images(carId, type, main, location) VALUES (32, 'car', true, '/images/cars/bluex4.jpg');

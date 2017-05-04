@@ -68,9 +68,10 @@
     <div class="price-filter">
       <!-- <input id="ex1" data-slider-id='ex1Slider' type="text" data-slider-min="0" data-slider-max="20" data-slider-step="1" data-slider-value="14"/> -->
     </div>
-    <div class="model-filter">
-      <!-- <p><input type="text" ng-model="filter"></p> -->
-      <!-- Color Search: <input type="text" ng-model="searchText.color" -->
+    <div class="model-filter" id="model-filter">
+      <h1>MODELS</h1>
+      <div class="model-filter-input"><input type="checkbox" id="checkbox-2-1" class="reg-checkbox" value="updates" name="models" value=""> <p>Model S</p></div>
+      <div class="model-filter-input"><input type="checkbox" id="checkbox-2-1" class="reg-checkbox" value="updates" name="modelx" value=""> <p>Model X</p></div>
     </div>
     <div class="color-filter" id="color-filter">
       <div class="colors">
@@ -91,7 +92,7 @@
   <div class="car-inventory-wrapper">
     <div class="car-inventory" style="color:black;" ng-repeat="car in Cars | filter: searchText">
       <div class="vehicle" id="vehicle">
-        <div class="vehicle-image"><a ui-sref="details({id: car.id})"><img src="{{car.inventoryimage}}" alt=""></a></div><!-- end vehicle-image -->
+        <div class="vehicle-image" ui-sref="details({id: car.id})"><img class="carimage" src="{{car.inventoryimage}}" alt=""></div><!-- end vehicle-image -->
         <div class="battery-badge"><img src="./images/p100d.svg" alt=""></div><!-- end battery badge -->
         <div class="battery-capacity"><p>100 kWh <span>Performance</span> All-Wheel Drive</p></div><!-- end battery capacity -->
         <div class="price">${{car.price}}</div><!-- end price -->

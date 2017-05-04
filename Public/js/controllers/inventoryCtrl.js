@@ -5,9 +5,4 @@ angular.module('tsla').controller('inventoryCtrl', function($scope, inventorySer
         console.log(data);
   });
 
-
-
-
-
-
 })

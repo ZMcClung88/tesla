@@ -6,7 +6,28 @@ angular.module('tsla').controller('detailsCtrl', function($scope, detailsService
     detailsService.getCar($stateParams.id, function(response){
       console.log(response);
       $scope.car = response;
-    }),
+      if(response[0].model === 'S'){
+        $scope.style = {
+          "width": "90%",
+          "height": "350px",
+          "background": "url("+ response[0].images[0].location +")",
+          "background-size": "cover",
+          "background-repeat": "no-repeat",
+          "background-position": "center"
+        }
+      } else {
+        $scope.style = {
+          "width": "90%",
+          "height": "350px",
+          "background": "url("+ response[0].images[0].location +")",
+          "background-size": "120%",
+          "background-repeat": "no-repeat",
+          "background-position": "center"
+        }
+      }
+    })
+
+
 
 
     $('#emailbtn').on('click', function(){

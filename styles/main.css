@@ -2,6 +2,7 @@
     font-family: 'Gotham Light';
     src: url('../fonts/Gotham Light Regular.otf');
 }
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
 
 @media only screen and (min-width: 600px) {
   .sections-wrapper {
@@ -11,6 +12,10 @@
     display: none;
   }
   #header-section2 {
+    display: none;
+    width: 100%;
+  }
+  #details-header-section {
     display: none;
     width: 100%;
   }
@@ -56,12 +61,25 @@
   #filter-section {
     height: 100px;
   }
+  #model-filter{
+    display: none;
+  }
   #color-filter {
     display: none;
   }
   #inventory-header {
     display: none;
   }
+  /*details page*/
+ #details-header-section{
+   height: 75px;
+   /*margin-bottom: 100px;*/
+ }
+  #details-navlinks {
+    display: none;
+  }
+
+
   /*model s*/
   #models-header {
     display: none;
@@ -755,16 +773,81 @@
   margin-bottom: 5%;
   /*border: 1px solid black;*/
   background-color: #F2F2F2;
+  font-family: 'Gotham Light';
 }
 
+.model-filter {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  /*justify-content: center;*/
+  color: black;
+  margin-left: 60%;
+  margin-top: 2.70%;
+  width: 200px;
+  /*border: 1px solid green;*/
+}
+.model-filter h1{
+  margin-right: 78px;
+  margin-bottom: 3%;
+  font-size: 14px;
+  color: grey;
+}
+.model-filter-input {
+  display: flex;
+  flex-direction: row;
+  /*flex-wrap: wrap;*/
+  /*border: 1px solid red;*/
+  width: 150px;
+  /*margin-left: -25px;*/
+  margin-bottom: 5%;
+}
+.reg-checkbox {
+	-webkit-appearance: none;
+	background-color: #fafafa;
+	border: 1px solid #cacece;
+	box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05);
+	padding: 9px;
+	/*border-radius: 3px;*/
+	display: inline;
+	position: relative;
+  width: 20px;
+  outline: none;
+}
+.reg-checkbox:active, .reg-checkbox:checked:active {
+	box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px 1px 3px rgba(0,0,0,0.1);
 
+}
+
+.reg-checkbox:checked {
+	background-color: #e9ecee;
+	/*border: 2px solid #adb8c0;*/
+	box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05), inset 15px 10px -12px rgba(255,255,255,0.1);
+	color: #cc0000;
+}
+.reg-checkbox:checked:after {
+	content: '\2713';
+	font-size: 25px;
+	position: absolute;
+	top: -5px;
+	left: -1px;
+	color: #cc0000;
+}
+
+.model-filter-input p {
+  display: flex;
+  width: 80px;
+  margin-left: 3%;
+  margin-top: 3.5%;
+  font-size: 14px;
+}
 .color-filter {
   width: 100%;
   display: flex;
   align-self: flex-end;
   justify-content: space-between;
-  margin-bottom: 2%;
-  margin-left: 75%;
+  margin-bottom: 1%;
+  margin-left: 3%;
   /*border: 2px solid yellow;*/
 }
 
@@ -772,6 +855,8 @@
   /*margin-bottom: -140px;*/
   color: grey;
   font-size: 14px;
+  /*padding-bottom: 3%;*/
+  margin-bottom: 13px;
 }
 
 .colors li{
@@ -834,10 +919,11 @@
 
 .vehicle {
   width: 100%;
+  /*max-height: 502px;*/
   height: 100%;
   margin: 5px;
   border: 1px solid lightgrey;
-  display: inline-flex;
+  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
@@ -845,9 +931,16 @@
   font-family: 'Gotham Light';
 }
 
-.vehicle-image img {
-  background-position: 50% 30%;
-  background-size: 450px;
+.car-inventory:nth-child(n+17) .vehicle-image, .vehicle-image a {
+  max-height: 255px;
+  margin-top: -10px;
+  margin-bottom: 10px;
+}
+
+.car-inventory:nth-child(n+17) .carimage {
+  position: relative;
+  top: -50px;
+  z-index: -1;
 }
 
 .battery-badge img {
@@ -879,13 +972,14 @@ span {
 }
 
 .leasing {
-  font-size: 14px;
+  font-size: 13px;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
   margin-top: -15%;
   margin-bottom: 5%;
+  width: 90%;
 }
 
 
@@ -1175,7 +1269,6 @@ span {
   width: 110.25%;
   height: auto;
   margin-left: -30%;
-  font-family: 'Gotham Light';
   font-weight: lighter;
 }
 
@@ -1188,7 +1281,7 @@ span {
   width: 50%;
   height:auto;
   font-size: 75px;
-  font-family: 'American-Typewriter';
+  font-family: sans-serif;
   color: white;
   text-align: center;
   margin-left: 45%;
@@ -1273,7 +1366,7 @@ span {
   width: 60%;
 }
 .details-main-image img{
-  width: 90%;
+  /*width: 90%;*/
 }
 .details-other-image img{
   width: 40%;
@@ -1548,7 +1641,8 @@ select#soflow, select#soflow-color {
   display: flex;
   flex-direction: row;
   /*justify-content: flex-start;*/
-  margin-top: 5%;
+  /*margin-top: 5%;*/
+  /*margin-left: -0.5%;*/
 }
 #updates input {
   margin-left: -50%;
@@ -1576,9 +1670,10 @@ select#soflow, select#soflow-color {
 
 .regular-checkbox:checked {
 	background-color: #e9ecee;
-	border: 2px solid #adb8c0;
+	border: 1px solid #adb8c0;
 	box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05), inset 15px 10px -12px rgba(255,255,255,0.1);
 	color: #cc0000;
+  /*-webkit-text-stroke: 1px #cc0000;*/
 }
 .regular-checkbox:checked:after {
 	content: '\2713';
@@ -1601,7 +1696,7 @@ select#soflow, select#soflow-color {
   /*border: 1px solid red;*/
   width: 150%;
   height: 35px;
-  margin-top: 10%;
+  margin-top: 15%;
   margin-left: 55%;
 }
 #next label {
