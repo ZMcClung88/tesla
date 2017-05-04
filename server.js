@@ -20,8 +20,8 @@ var db = massive.connect({connectionString : connString},
 
     // app.run(function(){
       db.createTables(function(x){
-        console.log("Tables Created Motor Scooter!");
-        console.log(x);
+        console.log("!!!!!!!!!! Tables Created !!!!!!!!!!");
+        // console.log(x);
       });
     // })
   }

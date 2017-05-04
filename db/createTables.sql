@@ -12,7 +12,8 @@ create table cars (
   year int,
   price varchar(10),
   batteryCapacity varchar(50),
-  inventoryImage varchar(50)
+  inventoryImage varchar(50),
+  badge varchar(50)
 );
 
 
@@ -29,72 +30,73 @@ create table images (
 
 
 
-INSERT INTO cars( make, model, color, year, price, batteryCapacity, inventoryImage)
-	VALUES ('Tesla', 'S', 'Black', 2017, '131,150', '100 kWh Performance All-Wheel Drive', '/images/cars/blacks1.jpg');
-INSERT INTO cars( make, model, color, year, price, batteryCapacity, inventoryImage)
-  VALUES ('Tesla', 'S', 'Black', 2017, '131,250', '100 kWh Performance All-Wheel Drive', '/images/cars/blacks1.jpg');
-INSERT INTO cars( make, model, color, year, price, batteryCapacity, inventoryImage)
-  VALUES ('Tesla', 'S', 'White', 2017, '131,350', '100 kWh Performance All-Wheel Drive', '/images/cars/whites1.jpg');
-INSERT INTO cars( make, model, color, year, price, batteryCapacity, inventoryImage)
-  VALUES ('Tesla', 'S', 'White', 2017, '131,450', '100 kWh Performance All-Wheel Drive', '/images/cars/whites1.jpg');
-INSERT INTO cars( make, model, color, year, price, batteryCapacity, inventoryImage)
-  VALUES ('Tesla', 'S', 'Red', 2017, '131,550', '100 kWh Performance All-Wheel Drive', '/images/cars/reds1.jpg');
-INSERT INTO cars( make, model, color, year, price, batteryCapacity, inventoryImage)
-  VALUES ('Tesla', 'S', 'Red', 2017, '131,650', '100 kWh Performance All-Wheel Drive', '/images/cars/reds1.jpg');
-INSERT INTO cars( make, model, color, year, price, batteryCapacity, inventoryImage)
-  VALUES ('Tesla', 'S', 'Blue', 2017, '131,650', '100 kWh Performance All-Wheel Drive', '/images/cars/blues1.jpg');
-INSERT INTO cars( make, model, color, year, price, batteryCapacity, inventoryImage)
-  VALUES ('Tesla', 'S', 'Blue', 2017, '131,750', '100 kWh Performance All-Wheel Drive', '/images/cars/blues1.jpg');
-INSERT INTO cars( make, model, color, year, price, batteryCapacity, inventoryImage)
-  VALUES ('Tesla', 'S', 'Silver', 2017, '131,850', '100 kWh Performance All-Wheel Drive', '/images/cars/silvers1.jpg');
-INSERT INTO cars( make, model, color, year, price, batteryCapacity, inventoryImage)
-  VALUES ('Tesla', 'S', 'Silver', 2017, '131,150', '100 kWh Performance All-Wheel Drive', '/images/cars/silvers1.jpg');
-INSERT INTO cars( make, model, color, year, price, batteryCapacity, inventoryImage)
-  VALUES ('Tesla', 'S', 'Red', 2017, '131,350', '100 kWh Performance All-Wheel Drive', '/images/cars/reds1.jpg');
-INSERT INTO cars( make, model, color, year, price, batteryCapacity, inventoryImage)
-  VALUES ('Tesla', 'S', 'Blue', 2017, '131,550', '100 kWh Performance All-Wheel Drive', '/images/cars/blues1.jpg');
-INSERT INTO cars( make, model, color, year, price, batteryCapacity, inventoryImage)
-  VALUES ('Tesla', 'S', 'Silver', 2017, '131,750', '100 kWh Performance All-Wheel Drive', '/images/cars/silvers1.jpg');
-INSERT INTO cars( make, model, color, year, price, batteryCapacity, inventoryImage)
-  VALUES ('Tesla', 'S', 'White', 2017, '131,950', '100 kWh Performance All-Wheel Drive', '/images/cars/whites1.jpg');
-INSERT INTO cars( make, model, color, year, price, batteryCapacity, inventoryImage)
-  VALUES ('Tesla', 'S', 'Black', 2017, '129,950', '100 kWh Performance All-Wheel Drive', '/images/cars/blacks1.jpg');
-INSERT INTO cars( make, model, color, year, price, batteryCapacity, inventoryImage)
-  VALUES ('Tesla', 'S', 'Blue', 2017, '130,050', '100 kWh Performance All-Wheel Drive', '/images/cars/blues1.jpg');
+INSERT INTO cars( make, model, color, year, price, batteryCapacity, inventoryImage, badge)
+	VALUES ('Tesla', 'Model S', 'Black', 2017, '131,150', '100 kWh Performance All-Wheel Drive', '/images/cars/blacks1.jpg', '/images/p100d.svg');
+INSERT INTO cars( make, model, color, year, price, batteryCapacity, inventoryImage, badge)
+  VALUES ('Tesla', 'Model S', 'Black', 2017, '131,250', '90 kWh Performance All-Wheel Drive', '/images/cars/blacks1.jpg', '/images/p90d.svg');
+INSERT INTO cars( make, model, color, year, price, batteryCapacity, inventoryImage, badge)
+  VALUES ('Tesla', 'Model S', 'White', 2017, '131,350', '90 kWh All-Wheel Drive', '/images/cars/whites1.jpg', '/images/90d.svg');
+INSERT INTO cars( make, model, color, year, price, batteryCapacity, inventoryImage, badge)
+  VALUES ('Tesla', 'Model S', 'White', 2017, '131,450', '75 kWh All-Wheel Drive', '/images/cars/whites1.jpg', '/images/75d.svg');
+INSERT INTO cars( make, model, color, year, price, batteryCapacity, inventoryImage, badge)
+  VALUES ('Tesla', 'Model S', 'Red', 2017, '131,550', '100 kWh Performance All-Wheel Drive', '/images/cars/reds1.jpg', '/images/p100d.svg');
+INSERT INTO cars( make, model, color, year, price, batteryCapacity, inventoryImage, badge)
+  VALUES ('Tesla', 'Model S', 'Red', 2017, '131,650', '100 kWh Performance All-Wheel Drive', '/images/cars/reds1.jpg', '/images/p100d.svg');
+INSERT INTO cars( make, model, color, year, price, batteryCapacity, inventoryImage, badge)
+  VALUES ('Tesla', 'Model S', 'Blue', 2017, '131,650', '75 kWh All-Wheel Drive', '/images/cars/blues1.jpg', '/images/75d.svg');
+INSERT INTO cars( make, model, color, year, price, batteryCapacity, inventoryImage, badge)
+  VALUES ('Tesla', 'Model S', 'Blue', 2017, '131,750', '75 kWh All-Wheel Drive', '/images/cars/blues1.jpg', '/images/75d.svg');
+INSERT INTO cars( make, model, color, year, price, batteryCapacity, inventoryImage, badge)
+  VALUES ('Tesla', 'Model S', 'Silver', 2017, '131,850', '90 kWh All-Wheel Drive', '/images/cars/silvers1.jpg', '/images/90d.svg');
+INSERT INTO cars( make, model, color, year, price, batteryCapacity, inventoryImage, badge)
+  VALUES ('Tesla', 'Model S', 'Silver', 2017, '131,150', '90 kWh All-Wheel Drive', '/images/cars/silvers1.jpg', '/images/90d.svg');
+INSERT INTO cars( make, model, color, year, price, batteryCapacity, inventoryImage, badge)
+  VALUES ('Tesla', 'Model S', 'Red', 2017, '131,350', '100 kWh Performance All-Wheel Drive', '/images/cars/reds1.jpg', '/images/p100d.svg');
+INSERT INTO cars( make, model, color, year, price, batteryCapacity, inventoryImage, badge)
+  VALUES ('Tesla', 'Model S', 'Blue', 2017, '131,550', '100 kWh Performance All-Wheel Drive', '/images/cars/blues1.jpg', '/images/p100d.svg');
+INSERT INTO cars( make, model, color, year, price, batteryCapacity, inventoryImage, badge)
+  VALUES ('Tesla', 'Model S', 'Silver', 2017, '131,750', '100 kWh Performance All-Wheel Drive', '/images/cars/silvers1.jpg', '/images/p100d.svg');
+INSERT INTO cars( make, model, color, year, price, batteryCapacity, inventoryImage, badge)
+  VALUES ('Tesla', 'Model S', 'White', 2017, '131,950', '100 kWh PerformanceAll-Wheel Drive', '/images/cars/whites1.jpg', '/images/p100d.svg');
+INSERT INTO cars( make, model, color, year, price, batteryCapacity, inventoryImage, badge)
+  VALUES ('Tesla', 'Model S', 'Black', 2017, '129,950', '90 kWh Performance All-Wheel Drive', '/images/cars/blacks1.jpg', '/images/p90d.svg');
+INSERT INTO cars( make, model, color, year, price, batteryCapacity, inventoryImage, badge)
+  VALUES ('Tesla', 'Model S', 'Blue', 2017, '130,050', '90 kWh Performance All-Wheel Drive', '/images/cars/blues1.jpg', '/images/p90d.svg');
 
 
-INSERT INTO cars( make, model, color, year, price, batteryCapacity, inventoryImage)
-	VALUES ('Tesla', 'X', 'Black', 2017, '153,800', '100 kWh Performance All-Wheel Drive', '/images/cars/blackx1.jpg');
-INSERT INTO cars( make, model, color, year, price, batteryCapacity, inventoryImage)
-  VALUES ('Tesla', 'X', 'Black', 2017, '98,500', '75 kWh Performance All-Wheel Drive', '/images/cars/blackx1.jpg');
-INSERT INTO cars( make, model, color, year, price, batteryCapacity, inventoryImage)
-  VALUES ('Tesla', 'X', 'White', 2017, '98,6200', '90 kWh Performance All-Wheel Drive', '/images/cars/whitex1.jpg');
-INSERT INTO cars( make, model, color, year, price, batteryCapacity, inventoryImage)
-  VALUES ('Tesla', 'X', 'White', 2017, '99,200', '75 kWh Performance All-Wheel Drive', '/images/cars/whitex1.jpg');
-INSERT INTO cars( make, model, color, year, price, batteryCapacity, inventoryImage)
-  VALUES ('Tesla', 'X', 'Blue', 2017, '99,650', '75 kWh Performance All-Wheel Drive', '/images/cars/bluex1.jpg');
-INSERT INTO cars( make, model, color, year, price, batteryCapacity, inventoryImage)
-  VALUES ('Tesla', 'X', 'Blue', 2017, '104,500', '75 kWh Performance All-Wheel Drive', '/images/cars/bluex1.jpg');
-INSERT INTO cars( make, model, color, year, price, batteryCapacity, inventoryImage)
-  VALUES ('Tesla', 'X', 'Silver', 2017, '110,650', '90 kWh Performance All-Wheel Drive', '/images/cars/silverx1.jpg');
-INSERT INTO cars( make, model, color, year, price, batteryCapacity, inventoryImage)
-  VALUES ('Tesla', 'X', 'Silver', 2017, '113,950', '90 kWh Performance All-Wheel Drive', '/images/cars/silverx1.jpg');
-INSERT INTO cars( make, model, color, year, price, batteryCapacity, inventoryImage)
-  VALUES ('Tesla', 'X', 'Silver', 2017, '131,850', '100 kWh Performance All-Wheel Drive', '/images/cars/silverx1.jpg');
-INSERT INTO cars( make, model, color, year, price, batteryCapacity, inventoryImage)
-  VALUES ('Tesla', 'X', 'Black', 2017, '99,150', '75 kWh Performance All-Wheel Drive', '/images/cars/blackx1.jpg');
-INSERT INTO cars( make, model, color, year, price, batteryCapacity, inventoryImage)
-  VALUES ('Tesla', 'X', 'Blue', 2017, '152,700', '100 kWh Performance All-Wheel Drive', '/images/cars/bluex1.jpg');
-INSERT INTO cars( make, model, color, year, price, batteryCapacity, inventoryImage)
-  VALUES ('Tesla', 'X', 'White', 2017, '113,550', '90 kWh Performance All-Wheel Drive', '/images/cars/whitex1.jpg');
-INSERT INTO cars( make, model, color, year, price, batteryCapacity, inventoryImage)
-  VALUES ('Tesla', 'X', 'White', 2017, '98,900', '90 kWh Performance All-Wheel Drive', '/images/cars/whitex1.jpg');
-INSERT INTO cars( make, model, color, year, price, batteryCapacity, inventoryImage)
-  VALUES ('Tesla', 'X', 'Silver', 2017, '153,100', '100 kWh Performance All-Wheel Drive', '/images/cars/silverx1.jpg');
-INSERT INTO cars( make, model, color, year, price, batteryCapacity, inventoryImage)
-  VALUES ('Tesla', 'X', 'Blue', 2017, '101,500', '90 kWh Performance All-Wheel Drive', '/images/cars/bluex1.jpg');
-INSERT INTO cars( make, model, color, year, price, batteryCapacity, inventoryImage)
-  VALUES ('Tesla', 'X', 'Blue', 2017, '101,500', '90 kWh Performance All-Wheel Drive', '/images/cars/bluex1.jpg');
+
+INSERT INTO cars( make, model, color, year, price, batteryCapacity, inventoryImage, badge)
+	VALUES ('Tesla', 'Model X', 'Black', 2017, '153,800', '100 kWh Performance All-Wheel Drive', '/images/cars/blackx1.jpg', '/images/p100d.svg');
+INSERT INTO cars( make, model, color, year, price, batteryCapacity, inventoryImage, badge)
+  VALUES ('Tesla', 'Model X', 'Black', 2017, '98,500', '90 kWh Performance All-Wheel Drive', '/images/cars/blackx1.jpg', '/images/p90d.svg');
+INSERT INTO cars( make, model, color, year, price, batteryCapacity, inventoryImage, badge)
+  VALUES ('Tesla', 'Model X', 'White', 2017, '98,6200', '100 kWh Performance All-Wheel Drive', '/images/cars/whitex1.jpg', '/images/p100d.svg');
+INSERT INTO cars( make, model, color, year, price, batteryCapacity, inventoryImage, badge)
+  VALUES ('Tesla', 'Model X', 'White', 2017, '99,200', '90 kWh Performance All-Wheel Drive', '/images/cars/whitex1.jpg', '/images/p90d.svg');
+INSERT INTO cars( make, model, color, year, price, batteryCapacity, inventoryImage, badge)
+  VALUES ('Tesla', 'Model X', 'Blue', 2017, '99,650', '100 kWh Performance All-Wheel Drive', '/images/cars/bluex1.jpg', '/images/p100d.svg');
+INSERT INTO cars( make, model, color, year, price, batteryCapacity, inventoryImage, badge)
+  VALUES ('Tesla', 'Model X', 'Blue', 2017, '104,500', '90 kWh Performance All-Wheel Drive', '/images/cars/bluex1.jpg', '/images/p90d.svg');
+INSERT INTO cars( make, model, color, year, price, batteryCapacity, inventoryImage, badge)
+  VALUES ('Tesla', 'Model X', 'Silver', 2017, '110,650', '100 kWh Performance All-Wheel Drive', '/images/cars/silverx1.jpg', '/images/p100d.svg');
+INSERT INTO cars( make, model, color, year, price, batteryCapacity, inventoryImage, badge)
+  VALUES ('Tesla', 'Model X', 'Silver', 2017, '113,950', '90 kWh Performance All-Wheel Drive', '/images/cars/silverx1.jpg', '/images/p90d.svg');
+INSERT INTO cars( make, model, color, year, price, batteryCapacity, inventoryImage, badge)
+  VALUES ('Tesla', 'Model X', 'Silver', 2017, '131,850', '100 kWh Performance All-Wheel Drive', '/images/cars/silverx1.jpg', '/images/p100d.svg');
+INSERT INTO cars( make, model, color, year, price, batteryCapacity, inventoryImage, badge)
+  VALUES ('Tesla', 'Model X', 'Black', 2017, '99,150', '90 kWh Performance All-Wheel Drive', '/images/cars/blackx1.jpg', '/images/p90d.svg');
+INSERT INTO cars( make, model, color, year, price, batteryCapacity, inventoryImage, badge)
+  VALUES ('Tesla', 'Model X', 'Blue', 2017, '152,700', '100 kWh Performance All-Wheel Drive', '/images/cars/bluex1.jpg', '/images/p100d.svg');
+INSERT INTO cars( make, model, color, year, price, batteryCapacity, inventoryImage, badge)
+  VALUES ('Tesla', 'Model X', 'White', 2017, '113,550', '100 kWh Performance All-Wheel Drive', '/images/cars/whitex1.jpg', '/images/p100d.svg');
+INSERT INTO cars( make, model, color, year, price, batteryCapacity, inventoryImage, badge)
+  VALUES ('Tesla', 'Model X', 'White', 2017, '98,900', '100 kWh Performance All-Wheel Drive', '/images/cars/whitex1.jpg', '/images/p100d.svg');
+INSERT INTO cars( make, model, color, year, price, batteryCapacity, inventoryImage, badge)
+  VALUES ('Tesla', 'Model X', 'Silver', 2017, '153,100', '90 kWh Performance All-Wheel Drive', '/images/cars/silverx1.jpg', '/images/p90d.svg');
+INSERT INTO cars( make, model, color, year, price, batteryCapacity, inventoryImage, badge)
+  VALUES ('Tesla', 'Model X', 'Blue', 2017, '101,500', '90 kWh Performance All-Wheel Drive', '/images/cars/bluex1.jpg', '/images/p90d.svg');
+INSERT INTO cars( make, model, color, year, price, batteryCapacity, inventoryImage, badge)
+  VALUES ('Tesla', 'Model X', 'Blue', 2017, '101,500', '90 kWh Performance All-Wheel Drive', '/images/cars/bluex1.jpg', '/images/p90d.svg');
 
 
 

@@ -62,11 +62,17 @@
   </div><!-- end inventory-hero -->
 
   <div class="filter-section" id="filter-section">
-    <div class="zip-filter">
-
+    <div class="sort">
+      <h3>SORT BY</h3>
+      <select class="sortCars" name="">
+        <option value="" class="lowFirst">Price (low to high) </option>
+        <option value="" class="highFirst">Price (high to low) </option>
+      </select>
     </div>
     <div class="price-filter">
       <!-- <input id="ex1" data-slider-id='ex1Slider' type="text" data-slider-min="0" data-slider-max="20" data-slider-step="1" data-slider-value="14"/> -->
+      <!-- <input type="range" name="" min="0" max="100"  multiple value="10, 80" step="10" onChange="sliderChange(this.value)">
+      <p>Slider Value = <span id="sliderStatus">50</span></p> -->
     </div>
     <div class="model-filter" id="model-filter">
       <h1>MODELS</h1>
@@ -93,8 +99,8 @@
     <div class="car-inventory" style="color:black;" ng-repeat="car in Cars | filter: searchText">
       <div class="vehicle" id="vehicle">
         <div class="vehicle-image" ui-sref="details({id: car.id})"><img class="carimage" src="{{car.inventoryimage}}" alt=""></div><!-- end vehicle-image -->
-        <div class="battery-badge"><img src="./images/p100d.svg" alt=""></div><!-- end battery badge -->
-        <div class="battery-capacity"><p>100 kWh <span>Performance</span> All-Wheel Drive</p></div><!-- end battery capacity -->
+        <div class="battery-badge"><img src="{{car.badge}}" alt=""></div><!-- end battery badge -->
+        <div class="battery-capacity">{{car.batterycapacity}}</div><!-- end battery capacity -->
         <div class="price">${{car.price}}</div><!-- end price -->
         <div class="leasing"><p>$1,651/mo. Tesla Lease with $7,346 due at signing </p></div><!-- end leasinig -->
         <div class="delivery"><img src="./images/icon-calendar.svg" alt=""><p> 14 Day Delivery</p></div><!-- end delivery -->

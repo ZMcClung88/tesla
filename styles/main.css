@@ -61,6 +61,12 @@
   #filter-section {
     height: 100px;
   }
+  .sort h3 {
+    display: none;
+  }
+  .sortCars {
+    display: none;
+  }
   #model-filter{
     display: none;
   }
@@ -71,6 +77,9 @@
     display: none;
   }
   /*details page*/
+.main-details-wrapper{
+    height: 2000px;
+  }
  #details-header-section{
    height: 75px;
    /*margin-bottom: 100px;*/
@@ -78,7 +87,40 @@
   #details-navlinks {
     display: none;
   }
-
+  .nav-title {
+    margin-top: 25px;
+    margin-bottom: 20px;
+  }
+  #details-main-image {
+    margin-top: -100px;
+    margin-left: 55px;
+  }
+  .details-other-image {
+    display: none;
+  }
+  .details-text {
+  display: none;
+  }
+  .details-description{
+    margin-top: 150px;
+    margin-left: -100px;
+  }
+  .details-features {
+    /*display: none;*/
+    margin-top: 100px;
+  }
+  .feature-title {
+    margin-left: -200px;
+  }
+  .feature-list {
+    margin-left: -200px;
+  }
+  .details-newsletter {
+    display: none;
+  }
+  .line {
+    display: none;
+  }
 
   /*model s*/
   #models-header {
@@ -206,68 +248,87 @@
   margin-bottom: 3px;
 }
 
-.section1-wrapper {
-  width: 100%;
-  /*height: auto;*/
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  position: relative;
-
-}
-
 .mainmobile-img {
   width: 100%;
   height: auto;
 }
 
-.textbox1 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
+
+.mainmobile-title {
   color: white;
-  z-index: 2;
-  margin-top: 100PX;
-  line-height: 38px;
-  font-size: 36px;
+  font-size: 32px;
   font-family: 'Gotham Light';
-}
-
-.textbox1 p {
-  font-size: 22px;
-}
-
-.btn-container1 {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  margin-top: -275px;
-}
-
-.mobile-btn1 {
-  width: 90%;
-  height: 5vh;
-  /*margin-left: 7vw;*/
-  margin-top: 4px;
-  margin-bottom: 5px;
   text-align: center;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  background-color: black;
-  background: rgba(255, 255, 255, 0.2);
-  color: white;
+  margin-top: -470px;
+  display:
+}
+
+.mainmobile-btns {
+  margin-top: 150px;
+  margin-bottom: 20px;
+  width: 90%;
+  text-align: center;
+  /*border: 1px solid black;*/
   font-family: 'Gotham Light';
-  font-size: 12px;
+}
+.mainmobile-btns li {
+  /*border: 1.5px solid white;*/
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3%;
+  padding: 5px;
+  color: white;
+  background-color: rgba(0,0,0, 0.4);
+  font-size: 13px;
 }
 
 .section1-wrapper {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  color: white;
+  font-family: 'Gotham Light';
+}
+.section1-titles {
+  margin-top: -320px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.section1-titles h1 {
+  font-size: 36px;
+}
+.section1-titles h4 {
+  font-size: 22px;
+  margin-bottom: 7%;
+}
+.section1-mainmobile-btns {
+  margin-top: 5px;
+  margin-bottom: 15px;
+  width: 90%;
+  text-align: center;
+  /*border: 1px solid black;*/
+}
+.section1-mainmobile-btns li {
+  /*border: 1.5px solid white;*/
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3%;
+  padding: 5px;
+  color: white;
+  background-color: rgba(255,255,255, 0.15);
+  font-size: 13px;
+}
+
+.section2-wrapper {
   width: 100%;
   /*height: auto;*/
   display: flex;
@@ -275,61 +336,70 @@
   flex-direction: column;
   align-items: center;
   position: relative;
-}
-
-#container2 {
-  margin-top: -225px;
-  /*opacity: 0.5;*/
-}
-
-
-
-
-.btn-container2 {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  margin-top: -225px;
-  padding-bottom: 20px;
-}
-
-
-.mobile-btn2 {
-  width: 90%;
-  height: 5vh;
-  /*margin-left: -7vw;*/
-  margin-top: 6px;
-  margin-bottom: 2px;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  background-color: black;
-  background: rgba(255, 255, 255, 0.1);
   color: white;
   font-family: 'Gotham Light';
-  font-size: 12px;
 }
 
-.mobile-btn2 p {
-  color: white;
-  z-index: 3;
+.section2-titles {
+  margin-top: -320px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+.section2-titles h1 {
+  font-size: 36px;
+}
+.section2-titles h4 {
+  font-size: 22px;
+  margin-bottom: 7%;
+}
+.section2-mainmobile-btns {
+  margin-top: 5px;
+  /*margin-bottom: 10px;*/
+  width: 90%;
+  text-align: center;
+  /*border: 1px solid black;*/
+}
+.section2-mainmobile-btns li {
+  /*border: 1.5px solid white;*/
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3%;
+  padding: 5px;
+  color: white;
+  background-color: rgba(255,255,255, 0.15);
+  font-size: 13px;
+}
+
 
 .section3-wrapper {
-  margin-top: -15px;
+  color: white;
+  font-family: 'Gotham Light';
 }
 
-#container3 {
-  margin-top: -200px;
+.section3-titles {
   width: 100%;
+  height: 125px;
+  margin-top: -100px;
+  /*padding-bottom: 20px;*/
+  /*margin-bottom: 40px;*/
   display: flex;
-  /*opacity: 0.5;*/
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0,0,0, 0.7);
+  /*border: 1px solid red;*/
+  position: relative;
 }
-
+ .section3-titles h1 {
+   font-size: 40px;
+   margin-bottom: 2%;
+ }
+.section3-titles p{
+  margin-bottom: 5%;
+}
 .btn-container3 {
   width: 100%;
   height: 150px;
@@ -769,11 +839,25 @@
   width: 100%;
   height: 125px;
   display: flex;
+  flex-direction: row;
+  justify-content: space-around;
   margin-top: 15%;
   margin-bottom: 5%;
   /*border: 1px solid black;*/
   background-color: #F2F2F2;
   font-family: 'Gotham Light';
+}
+.sort {
+  margin-top: 2.75%;
+  margin-left: 3%;
+  color: grey;
+  font-size: 14px;
+}
+.sortCars {
+  margin-top: 7%;
+  height: 35px;
+  width: 200px;
+  outline: none;
 }
 
 .model-filter {
@@ -782,8 +866,9 @@
   align-items: flex-end;
   /*justify-content: center;*/
   color: black;
-  margin-left: 60%;
+  margin-left: 27%;
   margin-top: 2.70%;
+  margin-right: 15%;
   width: 200px;
   /*border: 1px solid green;*/
 }
@@ -949,10 +1034,11 @@
   margin-top: -35%;
 }
 
-.battery-capacity p{
+.battery-capacity {
   font-size: 14px;
   font-weight: bolder;
   margin-top: -15%;
+  margin-bottom: 10%;
 }
 
 span {
@@ -978,7 +1064,7 @@ span {
   align-items: center;
   text-align: center;
   margin-top: -15%;
-  margin-bottom: 5%;
+  margin-bottom: 10%;
   width: 90%;
 }
 
@@ -1221,7 +1307,7 @@ span {
 }
 
 .self-driving-video {
-  margin-left: -2%;
+  /*margin-left: -3%;*/
 }
 
 .self-driving-section p {
@@ -1237,7 +1323,7 @@ span {
 
 .self-driving-btns {
   margin-bottom: 6%;
-  margin-left: -3%;
+  /*margin-left: -3%;*/
 }
 
 .self-driving-btns button {

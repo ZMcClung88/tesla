@@ -58,7 +58,7 @@
   <div class="details-main-content">
     <div class="left-side">
       <div class="details-images">
-        <div class="details-main-image" ng-style="style">
+        <div class="details-main-image" id="details-main-image" ng-style="style">
           <!-- <img src="{{car[0].images[0].location}}" ng-style="style" alt=""> -->
 
         </div><!-- end details main -->
@@ -70,16 +70,16 @@
         </div>
       </div><!-- details images -->
       <div class="details-text">
-        <p>This Model S is a showroom floor model and is eligible for EV incentives. These incentives take the form of rebates and tax credits available after purchase. EV incentives are based on registration in California.</p>
-        <p>Every Model S receives a full inspection, remaining battery and drive warranty and a four year, 50,000 miles new vehicle limited warranty with 24 hour roadside assistance.</p>
+        <p>This <span>{{car[0].model}}</span> is a showroom floor model and is eligible for EV incentives. These incentives take the form of rebates and tax credits available after purchase. EV incentives are based on registration in California.</p>
+        <p>Every <span>{{car[0].model}}</span> receives a full inspection, remaining battery and drive warranty and a four year, 50,000 miles new vehicle limited warranty with 24 hour roadside assistance.</p>
         <p>The calculation above provides information about the price of the car if you pay in cash and the estimated monthly payment if you participate in Tesla Leasing. The calculation does not include taxes or fees, which vary from state to state and in some cases, town to town.</p>
         <p>We’re able to offer Tesla Leasing in an increasing number of states. For states where Tesla Leasing is not available, we can help you identify other financing options. Participation in Tesla Leasing is based on a standard approval process. No security deposit required.</p>
-        <p>This Model S is available for pickup. Shipment to your nearest service center may require a transportation fee up to $2,000. Shipment to Alaska or Hawaii may cost up to $5,000.</p>
+        <p>This <span>{{car[0].model}}</span> is available for pickup. Shipment to your nearest service center may require a transportation fee up to $2,000. Shipment to Alaska or Hawaii may cost up to $5,000.</p>
       </div><!-- details text -->
     </div><!-- end left side -->
     <div class="right-side">
       <div class="details-description">
-        <img src="images/p100d.svg" alt="">
+        <img src="{{car[0].badge}}" alt="">
         <h1>2017 | 4,759 miles | 171774</h1>
         <h5></h5>
         <p>36 month lease with 10,000 miles per year <br> $7,323 due at signing</p>
@@ -88,7 +88,7 @@
         <button type="button" name="button">BUY</button>
         <div class="line"></div><!-- end line -->
       </div><!-- end details description -->
-      <div class="details-features">
+      <div class="details-features" id="details-features">
         <div class="feature-title">
           <h1>Features</h1>
         </div><!-- end feature title -->
