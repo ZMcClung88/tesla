@@ -62,12 +62,23 @@
   </div><!-- end inventory-hero -->
 
   <div class="filter-section" id="filter-section">
-    <div class="sort">
-      <h3>SORT BY</h3>
-      <select class="sortCars" name="">
+    <!-- <div class="sort"> -->
+      <!-- <h3>SORT BY</h3> -->
+      <!-- <select class="sortCars" name="">
         <option value="" class="lowFirst">Price (low to high) </option>
         <option value="" class="highFirst">Price (high to low) </option>
-      </select>
+      </select> -->
+    <!-- </div> -->
+    <div class="inventory-field sort" id="inventory-field">
+        <label for="sorting"><h3>SORT BY</h3></label>
+        <select id="soflow">
+          <option selected="selected"></option>
+          <!-- <option value="AF">Featured</option>\ -->
+          <option value="">Price (low to high)</option>
+          <option value="">Price (high to low) </option>
+          <option value="">Range (low to high) </option>
+          <option value="">Range (high to low) </option>
+        </select></input>
     </div>
     <div class="price-filter">
       <!-- <input id="ex1" data-slider-id='ex1Slider' type="text" data-slider-min="0" data-slider-max="20" data-slider-step="1" data-slider-value="14"/> -->
@@ -83,7 +94,7 @@
       <div class="colors">
         <h3>EXTERIOR</h3>
         <ul>
-          <li id="Black"></input></li>
+          <li id="Black" ng-click="getCarColor(car[0].color === 'Black')"></li>
           <li id="White"></li>
           <li id="Blue"></li>
           <li id="Silver"></li>

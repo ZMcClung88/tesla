@@ -5,4 +5,9 @@ angular.module('tsla').controller('inventoryCtrl', function($scope, inventorySer
         console.log(data);
   })
 
+  inventoryService.getCarColor(function(data){
+        $scope.carColor = data.color;
+        console.log($scope.carColor);
+  });
+
 })

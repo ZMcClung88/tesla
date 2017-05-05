@@ -3,7 +3,7 @@ angular.module('tsla').service('detailsService', function($http){
   this.getCar = function(id, callback) {
     console.log(id);
     // console.log('here here');
-    $http.get('http://127.0.0.1:4000/api/cars/' + id).then(
+    $http.get('/api/cars/' + id).then(
       function(response){
         console.log('*****');
         console.log(response.data)
