@@ -34,7 +34,7 @@ var db =  app.get('db')
 
 var serverCtrl = require('./serverCtrl.js');
 
-const port = 4000;
+const port = 4040;
 app.listen(port, function(){
   console.log("Yoda Lay Hee Whoo", port)
 })
