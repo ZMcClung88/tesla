@@ -2,7 +2,7 @@ const express = require('express');
 const bodyParser = require('body-parser')
 const cors = require('cors');
 const massive = require('massive');
-const configs = require('./config.js');
+// const configs = require('./config.js');
 
 
 var app = module.exports = express();
