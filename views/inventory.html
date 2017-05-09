@@ -94,12 +94,12 @@
       <div class="colors">
         <h3>EXTERIOR</h3>
         <ul>
-          <li id="Black" ng-click="getCarColor('Black')"></li>
+          <li id="Black" ng-click="myFilter = {color: 'Black'}"></li>
           <li id="White"></li>
           <li id="Blue"></li>
           <li id="Silver"></li>
           <li id="Red"></li>
-      </ul>
+        </ul>
       </div><!-- end colors -->
     </div><!-- end color filter -->
   </div><!-- end filter section -->
@@ -107,7 +107,7 @@
 
 
   <div class="car-inventory-wrapper">
-    <div class="car-inventory" style="color:black;" ng-repeat="car in Cars | filter: searchText">
+    <div class="car-inventory" style="color:black;" ng-repeat="car in Cars | filter: myFilter">
       <div class="vehicle" id="vehicle">
         <div class="vehicle-image" ui-sref="details({id: car.id})"><img class="carimage" src="{{car.inventoryimage}}" alt=""></div><!-- end vehicle-image -->
         <div class="battery-badge"><img src="{{car.badge}}" alt=""></div><!-- end battery badge -->

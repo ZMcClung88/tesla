@@ -34,11 +34,3 @@ app.listen(port, function(){
 
 app.get('/api/cars', serverCtrl.getAllCars)
 app.get('/api/cars/:id', serverCtrl.getCarById)
-// app.get('/api/cars/:color', serverCtrl.filterCars)
-// app.get('/api/cars/:color', function(req,res){
-//     res.send({ cars.color })
-// })
-
-// app.all('/*', function(req, res, next){
-//   res.header("Access-Contro-Allow-Origin", '*');
-// })
