@@ -17,8 +17,8 @@ app.use(cors());
 
 var db = massive.connect({connectionString : connString},
 
-  function(err, localdb){
-    db = localdb;
+//  function(err, localdb){
+//    db = localdb;
     app.set('db', db);
 
     // app.run(function(){
@@ -27,8 +27,8 @@ var db = massive.connect({connectionString : connString},
         // console.log(x);
       });
     // })
-  }
-)
+//  }
+//)
 
 
 
