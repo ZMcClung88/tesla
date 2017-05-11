@@ -34,7 +34,7 @@ var db = massive.connect({connectionString : connString},
 
 var serverCtrl = require('./serverCtrl');
 
-const port = 4000;
+const port = 80;
 app.listen(port, function(){
   console.log("Yoda Lay Hee Whoo", port)
 })
