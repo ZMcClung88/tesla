@@ -58,10 +58,15 @@
   <div class="details-main-content">
     <div class="left-side">
       <div class="details-images">
+          <div class="details-mobilemain-image" id="details-mobilemain-image">
+            <img src="{{car[0].images[0].location}}" alt="">
+          </div><!-- end details-mainmobile-image -->
+
         <div class="details-main-image" id="details-main-image" ng-style="style">
           <!-- <img src="{{car[0].images[0].location}}" ng-style="style" alt=""> -->
 
-        </div><!-- end details main -->
+        </div><!-- end details main image-->
+
         <div class="details-other-image">
           <img src="{{image.location}}" alt="" ng-repeat="image in car[0].images" ng-if="$index > 0">
           <!-- <img src="images/blues-detail3.jpeg" alt="">
@@ -79,8 +84,8 @@
     </div><!-- end left side -->
     <div class="right-side">
       <div class="details-description">
-        <img src="{{car[0].badge}}" alt="">
-        <h1>2017 | 4,759 miles | 171774</h1>
+        <img id="details-mobile-badge" src="{{car[0].badge}}" alt="">
+        <h1>2017 | {{car[0].miles}}</h1>
         <h5></h5>
         <p>36 month lease with 10,000 miles per year <br> $7,323 due at signing</p>
         <h5>${{car[0].price}}</h5>

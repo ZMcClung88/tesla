@@ -6,7 +6,7 @@ angular.module('tsla').controller('detailsCtrl', function($scope, detailsService
     detailsService.getCar($stateParams.id, function(response){
       console.log(response);
       $scope.car = response;
-      if(response[0].model === 'S'){
+      if(response[0].model === 'Model S'){
         $scope.style = {
           "width": "90%",
           "height": "350px",
@@ -19,6 +19,7 @@ angular.module('tsla').controller('detailsCtrl', function($scope, detailsService
         $scope.style = {
           "width": "90%",
           "height": "350px",
+          "margin-left": "-30px",
           "background": "url("+ response[0].images[0].location +")",
           "background-size": "120%",
           "background-repeat": "no-repeat",
