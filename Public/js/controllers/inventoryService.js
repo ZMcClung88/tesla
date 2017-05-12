@@ -1,7 +1,7 @@
 angular.module('tsla').service('inventoryService', function($http){
 
   this.getCars = function(callback){
-    $http.get('http://127.0.0.1:4000/api/cars').then(
+    $http.get('/api/cars').then(
       function(response){
         callback(response.data);
         console.log(response.data)
@@ -11,7 +11,7 @@ angular.module('tsla').service('inventoryService', function($http){
       })
   }
   this.getCarColor = function(callback){
-    $http.get('http://127.0.0.1:4000/api/cars').then(
+    $http.get('/api/cars').then(
       function(resp){
       // console.log(resp);
       for (var i = 0; i < resp.data.length; i++) {

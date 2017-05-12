@@ -17,18 +17,18 @@ app.use(cors());
 
 var db = massive.connect({connectionString : connString},
 
-//  function(err, localdb){
-//    db = localdb;
+ function(err, localdb){
+   db = localdb;
     app.set('db', db);
 
     // app.run(function(){
-      db.createTables(function(x){
-        console.log("!!!!!!!!!! Tables Created !!!!!!!!!!");
+      // db.createTables(function(x){
+        // console.log("!!!!!!!!!! Tables Created !!!!!!!!!!");
         // console.log(x);
-      });
+      // });
     // })
-//  }
-//)
+ }
+)
 
 
 
