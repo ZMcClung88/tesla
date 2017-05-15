@@ -3,46 +3,22 @@ angular.module('tsla').controller('homeCtrl', function($scope){
 
 
   $('.newsletter-link').on('click', function(){
-    // $(this).css('border','3px solid blue');
+        $('.modal-overlay').removeClass('hidden')
 
-    $overlay = $('<div/>').css({
-      'width':'100%',
-      'height':'200%',
-      'backgroundColor':'rgba(50,50,50,0.5)',
-      'position':'absolute',
-      'top':0,
-      'left':0
-    }).appendTo('body')
+      $('#email-btn').on('click', function(response){
+        $('.modal-overlay').addClass('hidden')
+      })
 
-
-    $modal = $('<div/>').css({
-      'width':750,
-      'height': 400,
-      'margin':'10% auto',
-      'position': 'relative',
-      'background-color':'white',
-      // 'border':'3px solid #505050',
-      'display': 'flex',
-      'flex-direction': 'column',
-      'justify-content': 'center',
-      'text-align': 'center',
-      'color': 'grey'
-    }).appendTo($overlay)
-
-    $modal.append('<div class="newsletterModal-header"></div>\
-                   <div class="newsletterModal-content">\
-                     <h1>Get Tesla Updates</h1>\
-                     <p>GET NEWSLETTER</p>\
-                     <input placeholder=" example@email.com"></input>\
-                     <button>SIGN UP</button>\
-                    </div> ')
-
-
-    $overlay.on('click', function(){
-      $overlay.remove()
     })
 
-  }),
+    $scope.addEmail = function(data){
+      var email = $('#emailAddress').val()
+      console.log(email);
+      var email_required = email.indexOf('@');
+      console.log(email_required);
+      homeService.addEmail(email);
+    }
+
 
   $('#order-btn').on('click', function(){
     // $(this).css('border','3px solid blue');

@@ -2,6 +2,7 @@
 -- create schema if not exists public;
 DROP TABLE IF EXISTS images;
 DROP TABLE IF EXISTS cars;
+DROP TABLE IF EXISTS email_addresses;
 
 
 create table cars (
@@ -25,6 +26,14 @@ create table images (
   main boolean,
   location varchar(50)
 );
+
+CREATE TABLE email_addresses (
+    id integer NOT NULL DEFAULT nextval('email_addresses_id_seq'::regclass),
+    email_address character varying(75),
+    CONSTRAINT email_addresses_pkey PRIMARY KEY (id)
+)
+
+
 --------------------------------------------------------------------------------------------------------------------------------------
 
 
