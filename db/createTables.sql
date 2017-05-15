@@ -31,7 +31,7 @@ CREATE TABLE email_addresses (
     id integer NOT NULL DEFAULT nextval('email_addresses_id_seq'::regclass),
     email_address character varying(75),
     CONSTRAINT email_addresses_pkey PRIMARY KEY (id)
-)
+);
 
 
 --------------------------------------------------------------------------------------------------------------------------------------
