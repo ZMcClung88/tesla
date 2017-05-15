@@ -19,9 +19,6 @@
     display: none;
     width: 100%;
   }
-  #details-mobilemain-image {
-    display: none;
-  }
   #mobile-energy-header-section {
     display: none;
   }
@@ -111,7 +108,8 @@
     margin-bottom: 20px;
   }
   #details-main-image {
-    display: none;
+    margin-top: -100px;
+    margin-left: 55px;
   }
   .details-other-image {
     display: none;
@@ -120,24 +118,18 @@
   display: none;
   }
   .details-description{
-    margin-top: 200px;
+    margin-top: 150px;
     margin-left: -100px;
-  }
-  #details-mobile-badge {
-    height: 200px;
-    width: 250px;
-    margin-left: -70px;
-    margin-bottom: -50px;
   }
   .details-features {
     /*display: none;*/
     margin-top: 100px;
   }
   .feature-title {
-    margin-left: -210px;
+    margin-left: -200px;
   }
   .feature-list {
-    margin-left: -210px;
+    margin-left: -200px;
   }
   .details-newsletter {
     display: none;
@@ -1521,12 +1513,9 @@ span {
   /*border: 2px solid red;*/
   width: 60%;
 }
-#details-mobilemain-image img{
-  width: 350px;
-  height: 300px;
-  margin-left: -15px;
+.details-main-image img{
+  /*width: 90%;*/
 }
-
 .details-other-image img{
   width: 40%;
   display: inline-block;

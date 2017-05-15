@@ -1,8 +1,8 @@
 var app = require('./server.js');
+var db = app.get('db');
 
 module.exports = {
   getAllCars: function(req, res) {
-    var db = app.get('db');
     db.getAllCars(function(err, cars){
       if(!err) {
         res.send(cars);
