@@ -797,7 +797,7 @@
 .footer-container {
   height: 325px;
   display: flex;
-  margin-left: -175px;
+  margin-left: -150px;
   /*margin-top: 13%;*/
   justify-content: center;
   align-items: flex-end;

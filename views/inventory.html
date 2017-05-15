@@ -87,18 +87,18 @@
     </div>
     <div class="model-filter" id="model-filter">
       <h1>MODELS</h1>
-      <div class="model-filter-input"><input type="checkbox" id="checkbox-2-1" class="reg-checkbox" value="updates" name="models" value=""> <p>Model S</p></div>
-      <div class="model-filter-input"><input type="checkbox" id="checkbox-2-1" class="reg-checkbox" value="updates" name="modelx" value=""> <p>Model X</p></div>
+      <div class="model-filter-input"><input type="checkbox" id="checkbox-2-1" class="reg-checkbox" value="updates" name="models" value=""ng-click="myFilter = {model: 'Model S'}"> <p>Model S</p></div>
+      <div class="model-filter-input"><input type="checkbox" id="checkbox-2-1" class="reg-checkbox" value="updates" name="modelx" value=""ng-click="myFilter = {model: 'Model X'}"> <p>Model X</p></div>
     </div>
     <div class="color-filter" id="color-filter">
       <div class="colors">
         <h3>EXTERIOR</h3>
         <ul>
           <li id="Black" ng-click="myFilter = {color: 'Black'}"></li>
-          <li id="White"></li>
-          <li id="Blue"></li>
-          <li id="Silver"></li>
-          <li id="Red"></li>
+          <li id="White" ng-click="myFilter = {color: 'White'}"></li>
+          <li id="Blue" ng-click="myFilter = {color: 'Blue'}"></li>
+          <li id="Silver" ng-click="myFilter = {color: 'Silver'}"></li>
+          <li id="Red" ng-click="myFilter = {color: 'Red'}"></li>
         </ul>
       </div><!-- end colors -->
     </div><!-- end color filter -->
