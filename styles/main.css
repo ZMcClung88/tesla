@@ -705,6 +705,7 @@
 }
 
 .links-list li:hover {
+  color: red;
   text-decoration: underline;
 }
 
