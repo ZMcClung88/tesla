@@ -23,6 +23,12 @@ var serverCtrl = require('./serverCtrl.js');
 const port = 80;
 app.listen(port, function(){
   console.log("Yoda Lay Hee Whoo", port)
+
+   db.createTables(function(x){
+     console.log("!!!!!!!!!! Tables Created !!!!!!!!!!");
+       console.log(x);
+  });
+
 })
 
 app.get('/api/cars', serverCtrl.getAllCars)
