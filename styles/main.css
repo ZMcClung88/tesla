@@ -704,6 +704,10 @@
   margin-left: 2.5%;
 }
 
+.links-list li:hover {
+  text-decoration: underline;
+}
+
 
 
 .links {
