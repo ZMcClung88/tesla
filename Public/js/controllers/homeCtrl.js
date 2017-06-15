@@ -53,14 +53,14 @@ angular.module('tsla').controller('homeCtrl', function($scope){
                   <div class="orderModal-title"><h1>Select A Model</h1></div>\
                   <div class="orderModal-desc">\
                     <div class="orderModal-left" style="display: flex; flex-direction: column; justify-content: space-around; margin-top: 3.5%"><img src="images/modal-select-models.png" style="height:180px;width:300px"/>\
-                          <button id="orderModal-btn">MODEL S</button>\
+                          <button id="orderModal-btn" ui-sref="models">MODEL S</button>\
                           <p style="color: #CC0000; font-weight:bolder; font-size:18px">Shop New Inventory</p>\
                           <p style="font-family: Gotham Light">Electric Sedan</p>\
                           <p style="font-family: Gotham Light">Quickest, Longest Range</p>\
                           <p style="font-family: Gotham Light">Seats 5 Adults</p>\
                     </div>\
                      <div class="orderModal-right" style="display: flex; flex-direction: column; justify-content: space-around"><img src="./images/model-select-modelx.png" style="height:200px;width:300px" />\
-                           <button id="orderModal-btn">MODEL X</button>\
+                           <button id="orderModal-btn" ui-sref="modelx">MODEL X</button>\
                            <p style="color: #CC0000; font-weight:bolder; font-size:18px">Shop New Inventory</p>\
                            <p style="font-family: Gotham Light">Electric SUV</p>\
                            <p style="font-family: Gotham Light">Spacious, Tow Rated</p>\
